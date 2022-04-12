@@ -2,23 +2,13 @@
 <body>
 
 <h1>The Window Navigator Object</h1>
-<h2>The The geolocation Property</h2>
+<h2>The onLine Property</h2>
 
 <p id="demo"></p>
 
 <script>
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(showPosition);
-} else { 
-  document.getElementById("demo").innerHTML =
-  "Geolocation is not supported by this browser.";
-}
-
-function showPosition(position) {
-  document.getElementById("demo").innerHTML =
-  "Latitude: " + position.coords.latitude + "<br>" +
-  "Longitude: " + position.coords.longitude;
-}
+let online = navigator.onLine;
+document.getElementById("demo").innerHTML = "Browser online: " + online;
 </script>
 
 </body>
