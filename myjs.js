@@ -158,8 +158,8 @@ counter.addEventListener("click",()=>{
 //     }    
 // }, 3000);
 window.setInterval(()=>{
-    document.querySelector(".disconnect").style.display = `none`;
-},10)
+    document.querySelector(".loader-wrapper").style.display = `none`;
+},1400)
 document.addEventListener("DOMContentLoaded",(event)=>{
-    alert("hi")
+    
 })
