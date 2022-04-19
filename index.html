@@ -1,15 +1,33 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="demo.css"></link>
+  <script src="myjs.js" defer="defer"></script>
+  <script src="easy.js" defer="defer"></script>
+</head>
 <body>
+  <div class="nav">
+    <p id="carts">0</p>
+    <button id="product" >daryaft</button>
+    <div>
 
-<h1>The Window Navigator Object</h1>
-<h2>The onLine Property</h2>
-
-<p id="demo"></p>
-
-<script>
-let online = navigator.onLine;
-document.getElementById("demo").innerHTML = "Browser online: " + online;
-</script>
-
+      <button id="counter">+</button>
+      <button id="counter1"><img src="trash.svg" placeholder="-" alt=""></button>
+    </div>
+  </div>
+  <div class="demo2">
+    <div id="demo">
+    </div>
+  </div>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <div class="loader loader-inner"></div>
+    </div>
+  </div>
+  <h1 id="demo"></h1>
 </body>
 </html>
