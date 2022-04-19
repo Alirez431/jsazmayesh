@@ -157,3 +157,8 @@ counter.addEventListener("click",()=>{
 //         document.querySelector(".disconnect").style.display = `none`;
 //     }    
 // }, 3000);
+function myfun() {
+    if (navigator.onLine==true) {
+        document.querySelector(".loader-wrapper").style.display ="none";
+    }
+}
