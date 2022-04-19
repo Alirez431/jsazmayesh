@@ -158,7 +158,7 @@ counter.addEventListener("click",()=>{
 //     }    
 // }, 3000);
 function myfun() {
-    if (navigator.onLine==true) {
+    if (navigator.onLine==false) {
         document.querySelector(".loader-wrapper").style.display ="none";
     }
 }
