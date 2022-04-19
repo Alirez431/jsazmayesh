@@ -72,7 +72,7 @@
        }
    }
    xhr.send();
-},100);
+},1500);
 let products = document.querySelector("#product");
  products.addEventListener("click",stor);
  function stor() {
@@ -154,11 +154,12 @@ counter.addEventListener("click",()=>{
             
 //     }else
 //     {
-//         document.querySelector(".disconnect").style.display = `none`;
+//         
 //     }    
 // }, 3000);
-function myfun() {
-    if (navigator.onLine==false) {
-        document.querySelector(".loader-wrapper").style.display ="none";
-    }
-}
+window.setInterval(()=>{
+    document.querySelector(".disconnect").style.display = `none`;
+},10)
+document.addEventListener("DOMContentLoaded",(event)=>{
+    alert("hi")
+})
